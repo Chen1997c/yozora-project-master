@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="yozora-project-common" />
+        <module name="yozora-project-eureka" />
+        <module name="yozora-project-oauth" />
+        <module name="yozora-project-provider-home" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="yozora-project-discovery" target="1.8" />
+      <module name="yozora-project-provider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="yozora-project-common" options="-parameters" />
+      <module name="yozora-project-discovery" options="-parameters" />
+      <module name="yozora-project-eureka" options="-parameters" />
+      <module name="yozora-project-master" options="-parameters" />
+      <module name="yozora-project-oauth" options="-parameters" />
+      <module name="yozora-project-provider" options="-parameters" />
+      <module name="yozora-project-provider-home" options="-parameters" />
+    </option>
+  </component>
+</project>

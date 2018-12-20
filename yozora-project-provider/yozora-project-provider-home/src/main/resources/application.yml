@@ -1,0 +1,20 @@
+server:
+  port: 7001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql:///yozora_project?useSSL=false&serverTimeZone=UTC
+  application:
+    name: provider-home
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+carousel:
+  img:
+    url: D:\vscode_wokrspace\yozora-project-web\src\assets\images\home
